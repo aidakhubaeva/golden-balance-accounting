@@ -35,18 +35,18 @@
             display: block;
             width: 200px;
             height: auto;
-            margin: 0 auto 5px;
+            margin: 0 auto 10px;
         }
 
         h1 {
             font-size: clamp(30px, 5vw, 44px);
             font-weight: 500;
             letter-spacing: -0.045em;
-            margin: 20px 0 10px;
+            margin: 30px 0 10px;
         }
 
         p {
-            font-size: 25px;
+            font-size: clamp(20px, 3vw, 25px);
             line-height: 1.75;
             color: #686762;
             margin: 0 auto;
@@ -54,15 +54,19 @@
         }
 
         a {
-            display: inline-block;
-            margin-top: 24px;
+            display: block;
             color: #2492a5;
-            font-size: 20px;
+            font-size: clamp(11px, 3.5vw, 15px);
             text-decoration: none;
         }
 
         a:hover {
             text-decoration: underline;
+        }
+
+        .email {
+            margin-bottom: 10px;
+            margin-top: 25px;
         }
     </style>
 </head>
@@ -70,7 +74,6 @@
 <body>
     <main>
         <div>
-
             <svg class="logo" role="img" aria-label="G.B.A logo" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 115.48 67">
                 <g fill="none" stroke="#1d1d1b" stroke-linecap="round" stroke-miterlimit="10">
@@ -84,12 +87,12 @@
             </svg>
             <p>Golden Balance Accounting LLC</p>
         </div>
-
         <h1>Coming Soon</h1>
         <p>We're working on our new website. In the meantime, feel free to get in touch.</p>
-        <a href="mailto:victoria@goldenbalanceaccounting.com">
+        <a class="email" href="mailto:victoria@goldenbalanceaccounting.com">
             victoria@goldenbalanceaccounting.com
         </a>
+        <a class="phone" href="tel:+16505750434">+1 650 575-0434</a>
 
     </main>
 </body>
